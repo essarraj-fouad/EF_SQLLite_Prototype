@@ -10,7 +10,7 @@ namespace EF_SQLLite
     {
         static void Main(string[] args)
         {
-            using (var db = new Model1())
+            using (var db = new MyDbContext())
             {
                 db.Database.EnsureCreated();
 
@@ -19,11 +19,11 @@ namespace EF_SQLLite
                 db.SaveChanges();
 
                 Console.Write(db.Groups.FirstOrDefault().ToString());
-                Console.Read();
-                 
+                Console.ReadKey();
+
             }
 
-           
+
 
         }
     }

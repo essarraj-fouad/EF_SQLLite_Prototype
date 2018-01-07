@@ -22,5 +22,7 @@ namespace App.Entities
 
         public string Code { set; get; }
         public string Name { set; get; }
+        public string Description { set; get; }
+        public string nombre { set; get; }
     }
 }
